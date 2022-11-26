@@ -30,51 +30,51 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ),
 };
 
-bool encoder_update_user(uint8_t index, bool clockwise) {
-    switch(get_highest_layer(layer_state|default_layer_state)) {
-        case 0:
-            if (index == 0) {
-                if (clockwise) {
-                    tap_code(KC_WH_D);
-                } else {
-                    tap_code(KC_WH_U);
-                }
-            } else if (index == 1) {
-                if (clockwise) {
-                    rgblight_increase_val();
-                } else {
-                    rgblight_decrease_val();
-                }
-            }
-            break;
-        case 1:
-            if (index == 0) {
-                if (clockwise) {
-                    tap_code(KC_DOWN);
-                } else {
-                    tap_code(KC_UP);
-                }
-            } else if (index == 1) {
-                if (clockwise) {
-                    rgblight_increase_hue();
-                } else {
-                    rgblight_decrease_hue();
-                }
-            }
-            break;
-    }
-    return false;
-}
+// bool encoder_update_user(uint8_t index, bool clockwise) {
+//     switch(get_highest_layer(layer_state|default_layer_state)) {
+//         case 0:
+//             if (index == 0) {
+//                 if (clockwise) {
+//                     tap_code(KC_WH_D);
+//                 } else {
+//                     tap_code(KC_WH_U);
+//                 }
+//             } else if (index == 1) {
+//                 if (clockwise) {
+//                     rgblight_increase_val();
+//                 } else {
+//                     rgblight_decrease_val();
+//                 }
+//             }
+//             break;
+//         case 1:
+//             if (index == 0) {
+//                 if (clockwise) {
+//                     tap_code(KC_DOWN);
+//                 } else {
+//                     tap_code(KC_UP);
+//                 }
+//             } else if (index == 1) {
+//                 if (clockwise) {
+//                     rgblight_increase_hue();
+//                 } else {
+//                     rgblight_decrease_hue();
+//                 }
+//             }
+//             break;
+//     }
+//     return false;
+// }
 
-bool oled_task_user(void) {
-    oled_write_P(PSTR("Layer: "), false);
-    switch(get_highest_layer(layer_state|default_layer_state)) {
-        case 0:
-            oled_write_P(PSTR("Default\n"), false);
-            break;
-        case 1:
-            oled_write_P(PSTR("Fn1\n"), false);
-            break;
-    }
-    return false;
-}
+// bool oled_task_user(void) {
+//     oled_write_P(PSTR("Layer: "), false);
+//     switch(get_highest_layer(layer_state|default_layer_state)) {
+//         case 0:
+//             oled_write_P(PSTR("Default\n"), false);
+//             break;
+//         case 1:
+//             oled_write_P(PSTR("Fn1\n"), false);
+//             break;
+//     }
+//     return false;
+// }

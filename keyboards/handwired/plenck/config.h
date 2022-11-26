@@ -19,8 +19,8 @@
 //#define NO_ACTION_TAPPING
 //#define NO_ACTION_ONESHOT
 
-#define ENCODERS_PAD_A { B5, D3 }
-#define ENCODERS_PAD_B { B7, D2 }
+#define ENCODERS_PAD_A { D3, B5 }
+#define ENCODERS_PAD_B { D2, B7 }
 #define ENCODER_RESOLUTIONS { 2, 2 }
 
 // Remove if needing more than 8 layers
@@ -33,7 +33,7 @@
 
 #define RGB_DI_PIN B0
 #define RGBLED_NUM 9
-#define USB_MAX_POWER_CONSUMPTION 500
+#define USB_MAX_POWER_CONSUMPTION 400
 #define RGBLIGHT_LIMIT_VAL 125
 #define RGBLIGHT_DEFAULT_VAL 20
 #define RGBLIGHT_VAL_STEP 10
