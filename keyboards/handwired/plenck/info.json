@@ -5,11 +5,11 @@
     "bootloader": "atmel-dfu",
     "diode_direction": "COL2ROW",
     "features": {
-        "bootmagic": true,
+        "bootmagic": false,
         "command": false,
         "console": false,
+        "mousekey": false,
         "extrakey": true,
-        "mousekey": true,
         "nkro": true    
     },
     "matrix_pins": {
