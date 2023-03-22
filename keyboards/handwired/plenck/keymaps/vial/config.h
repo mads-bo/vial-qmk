@@ -7,3 +7,7 @@
 // #define RGBLIGHT_EFFECT_KNIGHT
 // #define RGBLIGHT_EFFECT_BREATHING
 // #define RGBLIGHT_EFFECT_SNAKE
+
+// Change space cadet to use correct symbols
+#define LSPO_KEYS KC_LSFT, KC_ALGR, KC_7
+#define RSPC_KEYS KC_RSFT, KC_ALGR, KC_0

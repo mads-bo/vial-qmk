@@ -37,3 +37,9 @@
 #define RGBLIGHT_LIMIT_VAL 125
 #define RGBLIGHT_DEFAULT_VAL 20
 #define RGBLIGHT_VAL_STEP 10
+
+// OLED settings
+#define OLED_FONT_WIDTH 6
+
+// Reduce size, maybe
+#define NO_ACTION_ONESHOT
