@@ -11,3 +11,18 @@
 // Change space cadet to use correct symbols
 #define LSPO_KEYS KC_LSFT, KC_ALGR, KC_7
 #define RSPC_KEYS KC_RSFT, KC_ALGR, KC_0
+
+#define VIAL_TAP_DANCE_ENTRIES 16
+
+// Optimizatons, everything below
+#define NO_ACTION_MACRO
+#define NO_ACTION_FUNCTION
+
+
+// Maybe enable if debugging
+#ifndef NO_DEBUG
+#define NO_DEBUG
+#endif // !NO_DEBUG
+#if !defined(NO_PRINT) && !defined(CONSOLE_ENABLE)
+#define NO_PRINT
+#endif // !NO_PRINT

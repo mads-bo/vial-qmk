@@ -5,10 +5,14 @@ EXTRAKEY_ENABLE = yes
 
 LTO_ENABLE = yes
 TAP_DANCE_ENABLE = yes
-COMBO_ENABLE = yes
+COMBO_ENABLE = no
 WPM_ENABLE = yes
 
 QMK_SETTINGS = no
 COMMAND_ENABLE = no
 CONSOLE_ENABLE = no
 DYNAMIC_MACRO_ENABLE = no
+
+UNICODE_ENABLE   = no  # Unicode
+SWAP_HANDS_ENABLE= no  # Allow swapping hands of keyboard
+EXTRAFLAGS += -flto
